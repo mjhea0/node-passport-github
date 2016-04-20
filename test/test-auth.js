@@ -72,7 +72,6 @@ describe('when authenticated', function() {
           res.type.should.equal('application/json');
           res.body.should.be.a('object');
           res.body.should.have.property('user');
-          res.body.user.should.equal('unknown');
           done();
         });
       });
